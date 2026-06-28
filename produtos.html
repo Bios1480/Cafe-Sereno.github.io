@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe & Sereno</title>
+    <link rel="stylesheet" href="produtos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="brand">
+                <span class="brand-text">Cafe<span> & Sereno</span></span>
+            </a>
+            <a href="produtos.html" class="btn btn-primary nav-cta">Comprar Agora</a>
+        </div>
+    </header>
+
+
+    <section class="products-section">
+        <aside class="sidebar">
+            <div class="filter-group">
+                <h3>Palavras-chave</h3>
+                <div class="tags-container">
+                    <span class="tag">Moido <i class="close-icon">&times;</i></span>
+                    <span class="tag">Extração <i class="close-icon">&times;</i></span>
+                    <span class="tag">Aromático <i class="close-icon">&times;</i></span>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="label1" checked>
+                    <label for="label1">
+                        <strong>Preparado</strong>
+                        <span class="description">Descrição</span>
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="label2" checked>
+                    <label for="label2">
+                        <strong>Torrado</strong>
+                        <span class="description">Description</span>
+                    </label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="label3" checked>
+                    <label for="label3">
+                        <strong>Instantâneo</strong>
+                        <span class="description">Description</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="filter-group">
+                <div class="price-range-header">
+                    <span>Preço</span>
+                    <span>$0-100</span>
+                </div>
+                <div class="range-slider-wrapper">
+                    <div class="slider-track"></div>
+                    <input type="range" min="0" max="100" value="0" class="thumb thumb-left">
+                    <input type="range" min="0" max="100" value="100" class="thumb thumb-right">
+                </div>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <div class="top-bar">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="sort-options">
+                    <button class="sort-btn active">✓ Novo</button>
+                    <button class="sort-btn">Preço crescente</button>
+                    <button class="sort-btn">Preço decrescente</button>
+                    <button class="sort-btn">Avaliação</button>
+                </div>
+            </div>
+
+            <div class="products-grid" id="products-container">
+            </div>
+
+            <template id="product-card-template">
+                <article class="product">
+                    <div class="product-image">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product-content">
+                        <header>
+                            <h2 class="product-title">Latte</h2>
+                            <p class="product-description">Descripción...</p>
+                        </header>
+                        <footer class="product-footer">
+                            <span class="product-price">$0.00</span>
+                            <button class="btn-primary">Adicionar ao carrinho</button>
+                        </footer>
+                    </div>
+                </article>
+            </template>
+        </div>
+    </section>
+
+    <script src="products.js"></script>
+</body>
+
+</html>

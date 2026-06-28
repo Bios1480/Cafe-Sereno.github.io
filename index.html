@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe & Sereno</title>
+    <meta name="description" content="Premium roasted coffee brand landing page.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="assets/images/favicon cafe & Sereno.png" type="image/png">
+</head>
+
+<body>
+    <canvas id="hero-background"></canvas>
+    <video id="hero-video-source" autoplay muted loop playsinline class="video-origen-oculto">
+        <source src="assets/videos/grok video cafe.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+    <header class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="brand">
+                <span class="brand-text">Cafe<span> & Sereno</span></span>
+            </a>
+            <nav class="nav-links">
+                <a href="#hero">Início</a>
+                <a href="#about">Sobre Nós</a>
+                <a href="#Menu">Produtos</a>
+                <a href="#anatomia">O Café</a>
+            </nav>
+            <a href="produtos.html" class="btn btn-primary nav-cta">Comprar Agora</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                    <line x1="3" y1="6" x2="21" y2="6" />
+                    <line x1="3" y1="12" x2="21" y2="12" />
+                    <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </button>
+        </div>
+        <nav class="nav-mobile" id="navMobile">
+            <a href="#hero">Início</a>
+            <a href="#about">Sobre Nós</a>
+            <a href="#Menu">Produtos</a>
+            <a href="#anatomia">O Café</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <h1 class="hero-title">
+                            <span class="reveal-text">Descubre el</span><br>
+                            <span class="reveal-text">Arte del Café</span><br>
+                            <span class="reveal-text">Perfecto</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Experimenta los mejores granos de café tostados premium, obtenidos directamente de las
+                            granjas más exclusivas del mundo. Despierta tus sentidos con cada taza.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#" class="btn btn-primary btn-large">Pedir Ahora</a>
+                            <a href="#" class="btn btn-secondary">Café</a>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section">
+            <div class="container stats-container">
+                <div class="stat-box">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Variedades de Café</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">25+</div>
+                    <div class="stat-label">Pedidos en Proceso</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Clientes Felices</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="promises">
+        <div class="promises-card">
+            <div class="promises-icon">☕</div>
+            <h3>Café Premium</h3>
+            <p>Granos de origen único, tostados a la perfección.</p>
+        </div>
+        <div class="promises-card">
+            <div class="promises-icon">⚡</div>
+            <h3>Entrega Rápida</h3>
+            <p>Tu café favorito en minutos.</p>
+        </div>
+        <div class="promises-card">
+            <div class="promises-icon">🌳​</div>
+            <h3>Sostenible</h3>
+            <p>Empaques ecológicos y comercio justo.</p>
+        </div>
+
+        <div class="promises-card">
+            <div class="promises-icon">🌎​</div>
+            <h3>Envíos a todo el mundo</h3>
+            <p>Entregamos en todo el mundo a diversos paises</p>
+    </section>
+
+    <section class="about" , id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="about-title">Sobre Nosotros</h2>
+                <p>Somos una empresa dedicada a la producción de granos de café de alta calidad. Contamos con una
+                    amplia variedad de productos para satisfacer todos los gustos de nuestros clientes al rededor
+                    del
+                    mundo, tanto en el mercado local como internacional.</p>
+
+                <p>Contamos con un equipo de profesionales altamente calificados que nos permiten brindar un
+                    servicio
+                    de calidad a nuestros clientes.</p>
+
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="products-section" id="Menu">
+        <h2 class="title-products">Nuestros Productos</h2>
+
+        <div class="carousel-container">
+            <button class="carousel-btn prev" id="prevBtn">❮</button>
+
+            <div class="carousel-window">
+                <div class="container-productos" id="track">
+                    <article class="product">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div class="product-content">
+                            <header>
+                                <h2>Cappuccino</h2>
+                                <p>Granos de origen único, tostados a la perfección.</p>
+                            </header>
+                            <footer>
+                                <p>$10.00</p>
+                                <button class="btn btn-primary">Agregar al carrito</button>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <article class="product">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div class="product-content">
+                            <header>
+                                <h2>Latte</h2>
+                                <p>Granos de origen único, tostados a la perfección.</p>
+                            </header>
+                            <footer>
+                                <p>$10.00</p>
+                                <button class="btn btn-primary">Agregar al carrito</button>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div class="product-content">
+                            <header>
+                                <h2>Espresso</h2>
+                                <p>Granos de origen único, tostados a la perfección.</p>
+                            </header>
+                            <footer>
+                                <p>$10.00</p>
+                                <button class="btn btn-primary">Agregar al carrito</button>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div class="product-content">
+                            <header>
+                                <h2>Mocha</h2>
+                                <p>Granos de origen único, tostados a la perfección.</p>
+                            </header>
+                            <footer>
+                                <p>$10.00</p>
+                                <button class="btn btn-primary">Agregar al carrito</button>
+                            </footer>
+                        </div>
+                    </article>
+                    <article class="product">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                                alt="">
+                        </div>
+                        <div class="product-content">
+                            <header>
+                                <h2>Americano</h2>
+                                <p>Granos de origen único, tostados a la perfección.</p>
+                            </header>
+                            <footer>
+                                <p>$10.00</p>
+                                <button class="btn btn-primary">Agregar al carrito</button>
+                            </footer>
+                        </div>
+                    </article>
+
+                    <article class="product product-more">
+                        <div class="product-content-more">
+                            <p class="more-text">Quer mais produtos?</p>
+                            <a href="produtos.html" class="btn btn-primary btn-more">Clique aqui!!</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <button class="carousel-btn next" id="nextBtn">❯</button>
+        </div>
+    </section>
+
+    <section class="anatomy-section" id="anatomia">
+        <div class="container">
+            <h2 class="anatomy-main-title">A Anatomia do <span class="amber-text">Café</span></h2>
+
+            <div class="anatomy-container">
+                <div class="cup-wrapper">
+                    <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1000&auto=format&fit=crop"
+                        alt="Cup Anatomy" class="cup-image">
+
+                    <div class="hotspot" style="top: 15%; left: 50%;" data-title="Microespuma"
+                        data-desc="Leite vaporizado a 65°C para uma textura de seda."></div>
+
+                    <div class="hotspot" style="top: 45%; left: 35%;" data-title="O Grão"
+                        data-desc="Arábica de altitude com notas de chocolate e nozes."></div>
+
+                    <div class="hotspot" style="top: 75%; left: 60%;" data-title="A Extração"
+                        data-desc="25 segundos de pressão constante para o espresso perfeito."></div>
+                </div>
+
+                <div class="anatomy-content">
+                    <div class="info-card">
+                        <i class='bx bx-Target-lock'></i>
+                        <p>Passe o mouse ou toque nos pontos para descobrir os segredos do nosso preparo artesanal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3 class="footer-logo">Cafe<span> & Sereno</span></h3>
+                <p>Disfruta de un momento de relajación con una taza de café caliente y un buen libro.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Redes Sociales</h4>
+                <ul>
+                    <li><a href="#"><i class='bx bxl-instagram'> Instagram</i></a></li>
+                    <li><a href="#"><i class='bx bxl-facebook'> Facebook</i></a></li>
+                    <li><a href="#"><i class='bx bxl-twitter'> Twitter</i></a></li>
+                    <li><a href="#"><i class='bx bxl-tiktok'> TikTok</i></a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <ul>
+                    <li><a href="mailto:[EMAIL_ADDRESS]">cafe&sereno@gmail.com</a></li>
+                    <li><a href="tel:+554112345678">+55 41 1234 - 5678</a></li>
+                    <li><a href="direccion">Rua 123, 456 - Centro, Curitiba - PR, 80000-000</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-brand">
+                    <img src="assets/images/favicon cafe & Sereno.png" class="footer-icon">
+                    <h3 class="footer-logo">Cafe<span> & Sereno</span></h3>
+                </div>
+                <p>Disfruta de un momento de relajación con una taza de café caliente y un buen libro.</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cafe & Sereno - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

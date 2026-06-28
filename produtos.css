@@ -571,7 +571,7 @@ a {
     }
 
     .sidebar {
-        width: 90%;
+        width: 100%;
         position: relative;
         top: 0 !important;
         max-height: none;
@@ -586,11 +586,11 @@ a {
     }
 
     .search-wrapper {
-        width: 100%;
+        width: 70%;
     }
 
     .sort-options {
-        width: 80%;
+        width: 70%;
         overflow-x: auto;
         padding-bottom: 3px;
     }

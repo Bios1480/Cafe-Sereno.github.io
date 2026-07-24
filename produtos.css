@@ -451,6 +451,7 @@ a {
 
 .sort-options {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -499,6 +500,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
+    justify-items: center;
 }
 
 
@@ -564,10 +566,12 @@ a {
 /* ==========================================================================
    8. RESPONSIVE / ADAPTACIÓN MÓVIL
    ========================================================================== */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .products-section {
         flex-direction: column;
-        padding: 20px;
+        padding: 100px 16px 40px 16px;
+        margin-top: 0;
+        gap: 20px;
     }
 
     .sidebar {
@@ -579,20 +583,48 @@ a {
 
     .top-bar {
         flex-direction: column;
-        align-items: flex-start;
-        gap: 7px;
+        align-items: stretch;
+        gap: 12px;
         position: relative;
         top: 0 !important;
     }
 
     .search-wrapper {
-        width: 70%;
+        width: 100%;
     }
 
     .sort-options {
-        width: 70%;
-        overflow-x: auto;
-        padding-bottom: 3px;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .sort-btn {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .products-section {
+        padding: 90px 12px 30px 12px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product {
+        max-width: 100%;
+    }
+
+    .sort-btn {
+        padding: 7px 12px;
+        font-size: 0.8rem;
     }
 }
 

@@ -1,7 +1,6 @@
-// 1. Deja aquí el endpoint de tu API o Base de Datos cuando esté lista
+
 const API_URL = '';
 
-// Datos de respaldo (Mock Data) locales
 const backupProducts = [
     {
         id: 1,
@@ -26,12 +25,11 @@ const backupProducts = [
     }
 ];
 
-// Esperar a que el HTML cargue por completo
 document.addEventListener('DOMContentLoaded', () => {
     fetchAndRenderProducts();
 });
 
-// Función principal asíncrona
+
 async function fetchAndRenderProducts() {
     const container = document.getElementById('products-container');
 
@@ -44,12 +42,12 @@ async function fetchAndRenderProducts() {
             if (!response.ok) throw new Error('Error en la respuesta del servidor');
             products = await response.json();
         } else {
-            // Si la URL está en blanco, usamos los datos locales de prueba
+           
             console.warn("API_URL vacía. Cargando productos de prueba locales.");
             products = backupProducts;
         }
 
-        // Mandamos los productos a pintar en el HTML
+       
         renderGrid(products, container);
 
     } catch (error) {
@@ -58,7 +56,7 @@ async function fetchAndRenderProducts() {
     }
 }
 
-// Función encargada de clonar el template e inyectar los datos
+
 function renderGrid(productsList, targetContainer) {
     targetContainer.innerHTML = ''; // Limpiamos cargadores previos
 
